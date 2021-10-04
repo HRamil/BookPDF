@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faWindowClose  } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-register',
@@ -11,5 +12,9 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  faWindowClose = faWindowClose
 
+  dissableBlur(){
+    document.getElementById("body").style.opacity = "1"
+  }
 }

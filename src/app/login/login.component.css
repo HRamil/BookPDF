@@ -26,15 +26,11 @@ input{
     border-radius: 10px ;
 }
 form input[type='submit']{
-    background: #1877f2;
-}
-input[type='submit']{
-    border: none;
-    background: #42b72a;
+    background: red;
     color:white;
     font-size: 16px;
+    border: none;
 }
-
 #Login > div{
     text-align: center;
 }
@@ -60,4 +56,18 @@ form >div {
 form >div input{
     padding-left: 70px;
     margin-bottom: 20px;
+}
+p ,a {
+    display: inline;
+}
+a{
+    margin-left: 10px;
+    text-decoration: none;
+    color:red
+}
+form p{
+    color:red;
+    text-align: right;
+    margin:-15px 0 10px 0;
+
 }

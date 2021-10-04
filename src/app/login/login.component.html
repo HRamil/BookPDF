@@ -1,6 +1,10 @@
 <div id="body">
     <div></div>
     <div id="Login">
+        <div>
+            <h1>Welcome back!</h1>
+            <p>Sign in to your account</p>
+        </div>
         <form>
             <div>
                 <fa-icon [icon]="faUser"></fa-icon>
@@ -10,12 +14,13 @@
                 <fa-icon [icon]="faLock"></fa-icon>
                 <input type="password"name="password" placeholder="Password" >
             </div>
-            <input type="submit" value="Log In">
             <p>Forgot Password?</p>
+            <input type="submit" value="Sign in">
         </form>
         <div>
-            <input type="submit" value="Create New Account">
+            <p>Don't have an account?</p>
+            <a (click)="blur()" [routerLink]="['/register']"  type="submit">Sign up here</a>
         </div>
     </div>
-    <app-register></app-register>
 </div>
+<router-outlet></router-outlet>

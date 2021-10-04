@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faUser ,faLock } from '@fortawesome/free-solid-svg-icons';
+import { faUser ,faLock  } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-login',
@@ -14,4 +14,7 @@ export class LoginComponent implements OnInit {
   }
   faUser = faUser
   faLock = faLock
+  blur(){
+    document.getElementById("body").style.opacity = "0.5";
+  }
 }
