@@ -2,7 +2,7 @@
     <div></div>
     <div id="Login">
         <div>
-            <h1>Welcome back!</h1>
+            <h2>Welcome back!</h2>
             <p>Sign in to your account</p>
         </div>
         <form>
@@ -17,9 +17,10 @@
             <p>Forgot Password?</p>
             <input type="submit" value="Sign in">
         </form>
+        <app-social-icon [text]="text"></app-social-icon>
         <div>
             <p>Don't have an account?</p>
-            <a (click)="blur()" [routerLink]="['/register']"  type="submit">Sign up here</a>
+            <a (click)="blur()" [routerLink]="['/register']">Sign up here</a>
         </div>
     </div>
 </div>

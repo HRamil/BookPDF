@@ -4,19 +4,21 @@
         height: 100vh;
 }
 #Login{
-    width: 400px;
+    width: 360px;
     padding: 20px;
     background-color: white;
     justify-content: center;
+    border-radius: 7px;
 }
 form , #Login {
     display: flex;
     flex-direction: column;
 }
-form{
+#Login div:first-child{
     margin-bottom: 10px;
+}
+form{
     padding:5px 5px 10px 5px;
-    border-bottom: 1px solid #f0f2f5;
 }
 input{
     margin-bottom: 10px;
@@ -26,7 +28,7 @@ input{
     border-radius: 10px ;
 }
 form input[type='submit']{
-    background: red;
+    background: #ed1c24;
     color:white;
     font-size: 16px;
     border: none;
@@ -34,14 +36,11 @@ form input[type='submit']{
 #Login > div{
     text-align: center;
 }
-form p {
-    text-align: center;
-}
 fa-icon{
     padding: 15px 18px;
     border:1px solid #f0f2f5;
     border-radius: 50%;
-    color: red;
+    color: #ed1c24;
     position: absolute;
     font-size: 18px;
     background: white;
@@ -59,15 +58,16 @@ form >div input{
 }
 p ,a {
     display: inline;
+    font-size: 13px;
 }
 a{
     margin-left: 10px;
     text-decoration: none;
-    color:red
+    color:#ed1c24
 }
 form p{
-    color:red;
+    color:#ed1c24;
     text-align: right;
     margin:-15px 0 10px 0;
-
+    font-size: 11px;
 }

@@ -12,6 +12,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  text = "in"
   faUser = faUser
   faLock = faLock
   blur(){

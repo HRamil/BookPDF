@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Routes ,RouterModule } from '@angular/router';
+import { SocialIconComponent } from './social-icon/social-icon.component';
 
 const appRoutes :Routes = [
   {path:'register' , component : RegisterComponent}
@@ -20,6 +21,7 @@ const appRoutes :Routes = [
     NavbarComponent,
     LoginComponent,
     RegisterComponent,
+    SocialIconComponent,
   ],
   imports: [
     BrowserModule,
