@@ -1,0 +1,25 @@
+div{
+    position: relative;
+    background-color: #ed1c24;
+}
+fa-icon{
+    position: absolute;
+    transform: translate(50%,-110%);
+
+}
+input{
+    width: 30px;
+    height: 30px;
+    border:2px solid black;
+    border-radius:50%;
+    background: none;
+    outline: none;
+}
+div:hover input{
+    width: 80px;
+    border-radius:10px;
+    transition: 0.5s;
+}
+div:hover fa-icon{
+    z-index: -1;
+}

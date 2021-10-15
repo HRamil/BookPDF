@@ -1,0 +1,14 @@
+.Navbar{
+    display: flex;
+    flex-direction: column;
+    background-color: #ed1c24;
+    padding:10px 20px;
+}
+.topList , .logo_search , .seacrh_admin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.seacrh_admin{
+    width:25% ;
+}

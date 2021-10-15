@@ -9,9 +9,27 @@ import { RegisterComponent } from './register/register.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Routes ,RouterModule } from '@angular/router';
 import { SocialIconComponent } from './social-icon/social-icon.component';
+import { HomeComponent } from './home/home.component';
+import { SearchInputComponent } from './search-input/search-input.component';
+import { BookComponent } from './book/book.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { UserComponent } from './user/user.component';
+import { SliderComponent } from './slider/slider.component';
 
 const appRoutes :Routes = [
-  {path:'register' , component : RegisterComponent}
+  {
+    path: '', component: LoginComponent,
+    children: [
+      {
+        path: 'register', component: RegisterComponent
+      }
+    ]
+  },
+
+  {
+    path: 'home', component: HomeComponent
+  }
+
 ];
 
 
@@ -22,12 +40,18 @@ const appRoutes :Routes = [
     LoginComponent,
     RegisterComponent,
     SocialIconComponent,
+    HomeComponent,
+    SearchInputComponent,
+    BookComponent,
+    UserComponent,
+    SliderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,11 +3,24 @@
         <fa-icon (click)="dissableBlur()" [routerLink]="['/']"  [icon]="faWindowClose"></fa-icon>
         <h1>Sign Up</h1>
         <form>
-            <input type="text" placeholder="First Name" required>
-            <input type="text" placeholder="Last Name" required>
-            <input type="text" placeholder="Username" required>
-            <input type="password" placeholder="Password" required>
-            <input type="password" placeholder="Confirm Password" required>
+            <div>
+                <fa-icon [icon]="faUser"></fa-icon>
+                <input type="text" name="username" placeholder="Username">
+            </div>
+            <div>
+                <fa-icon [icon]="faEnvelope"></fa-icon>
+                <input type="email"name="email" placeholder="Email" >
+            </div>
+            <div>
+                <fa-icon [icon]="faLock"></fa-icon>
+                <input type="password"name="password" placeholder="Password" >
+            </div>
+            <div>
+                <fa-icon [icon]="faLock"></fa-icon>
+                <input type="password"name="password" placeholder="Confirm Password" >
+            </div>
+            <input type="submit" value="Sign in">
+            <app-social-icon [text]="text"></app-social-icon>
         </form>
     </div>
 </div>

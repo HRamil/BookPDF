@@ -8,7 +8,8 @@
     justify-content: center;
     flex-direction: column;
 }
-#register div{
+#register>div{
+    position: relative;
     margin: auto;
     width: 400px;
     padding: 20px;
@@ -17,6 +18,8 @@
 form{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding:5px 5px 10px 5px;
 }
 input{
     margin-bottom: 10px;
@@ -26,5 +29,40 @@ input{
     border-radius: 10px ;
 }
 fa-icon{
+    padding: 15px 18px;
+    border:1px solid #f0f2f5;
+    border-radius: 50%;
+    color: #ed1c24;
+    position: absolute;
+    font-size: 18px;
+    background: white;
+    top: -9px;
+    left: -5px;
+}
+#register>div>fa-icon{
+    position: relative;
     float: right;
+    border:none;
+    font-size: 25px;
+    border-radius: 0;
+    padding: 0;
+}
+form >div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+form >div input{
+    padding-left: 70px;
+    margin-bottom: 20px;
+}
+form input[type='submit']{
+    background: #ed1c24;
+    color:white;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 20px;
+}
+h1{
+    margin-bottom: 20px;
 }
