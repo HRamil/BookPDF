@@ -1,4 +1,10 @@
-import { Component, OnInit , Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import data from '../../assets/data/book.json';
+interface Book{
+  name: string,
+  image : string,
+  view : number
+}
 
 @Component({
   selector: 'app-book',
@@ -7,12 +13,10 @@ import { Component, OnInit , Input } from '@angular/core';
 })
 export class BookComponent implements OnInit {
 
-  @Input() title ;
-  @Input() image;
   constructor() { }
 
   ngOnInit(): void {
     console.log()
   }
-
+  book: Book[] = data
 }

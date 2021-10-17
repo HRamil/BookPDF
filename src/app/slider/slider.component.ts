@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import data from '../../assets/data/book.json';
 
+interface Slide{
+  image : string,
+  class : string
+}
+
 @Component({
   selector: 'app-slider',
   templateUrl: './slider.component.html',
@@ -8,26 +13,31 @@ import data from '../../assets/data/book.json';
 })
 export class SliderComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
-    this.list()
+  constructor() { 
   }
   slide = []
-  
-  list(){
-    let arr = data;
-    for(let i=0;i<5;i++){
-      let max = 0;
-      let index = 0;
-      for(let j=0;j<data.length;j++){
-        if(data[j].view>max){
-          max=data[j].view
+  ngOnInit(): void {
+
+    let arr = []
+    for(let i=0; i<data.length;i++){
+      arr.push(data[i])
+    }
+    for(let i=1;i<=5;i++){
+      let max = 0 , index ;
+      for(let j=0; j<arr.length;j++){
+        if(arr[j].view>=max){
+          max=arr[j].view;
           index = j
         }
       }
-      this.slide.push(arr[index].image)
-      arr.splice(index, 1);
+      let obj = { image: arr[index].image,
+                  class: "img"+i}
+
+      arr.splice(index,1)
+      this.slide.push(obj)
     }
+
   }
+  
+  slider: Slide[] = this.slide
 }

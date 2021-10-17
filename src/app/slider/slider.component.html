@@ -1,5 +1,5 @@
-<div class="slide">
-    <div *ngFor="let slides of slide">
-        <img src="{{slides}}" alt="">
-    </div>
+<div id="slide">
+    
+        <img *ngFor="let slides of slider" src="{{slides.image}}" alt="" id="{{slides.class}}">
+   
 </div>

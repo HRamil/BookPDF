@@ -1,10 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import data from './../../assets/data/book.json';
-
-interface Book{
-  name: String,
-  image : String,
-}
 
 @Component({
   selector: 'app-home',
@@ -18,5 +12,4 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  books : Book[] = data;
 }

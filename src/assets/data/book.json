@@ -2,7 +2,7 @@
   {
     "name": "Harry Potter",
     "image": "../../assets/image/Harry Potter.jpeg" ,
-    "view" : 230
+    "view" : 530
   },
   {
     "name": "Robinson Crusoe" ,
@@ -12,16 +12,16 @@
   {
     "name": "Hunger Games",
     "image": "../../assets/image/Hunger Games.jpg" ,
-    "view" : 20
+    "view" : 400
   },
   {
     "name": "The KIte Runner",
     "image": "../../assets/image/The KIte Runner.jpg" ,
-    "view" : 200
+    "view" : 190
   },
   {
     "name": "The KIte Runner",
     "image": "../../assets/image/The KIte Runner.jpg" ,
-    "view" : 200
+    "view" : 260
   }
 ]
